@@ -1,4 +1,4 @@
-package com.kmnvxh.winditest.ui.theme
+package com.kmnvxh.winditest.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

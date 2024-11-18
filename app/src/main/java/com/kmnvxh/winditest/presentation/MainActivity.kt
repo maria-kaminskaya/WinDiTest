@@ -1,4 +1,4 @@
-package com.kmnvxh.winditest
+package com.kmnvxh.winditest.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.kmnvxh.winditest.ui.theme.WinDiTestTheme
+import com.kmnvxh.winditest.presentation.theme.WinDiTestTheme
 
 class MainActivity : ComponentActivity() {
 
