@@ -13,8 +13,16 @@ class RegRepository @Inject constructor(
 
     private val service: () -> RegistrationApi = { retrofitServiceGenerator.service(RegistrationApi::class) }
 
-    suspend fun registrationUser(): Flow<RegistrationUserResponse> =
+    suspend fun registrationUser(
+        phone: String,
+        name: String,
+        username: String
+    ): Flow<RegistrationUserResponse> =
         service().registrationUser(
-            RegistrationUserRequest()
+            RegistrationUserRequest(
+                phone = phone,
+                name = name,
+                username = username
+            )
         )
 }
